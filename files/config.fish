@@ -22,7 +22,7 @@ end
 
 function fish
 clear
-echo -e "\033[92m BETA"	
+echo -e "\033[92m V1"	
 echo "   .---,   "
 echo "  (    ~   4N? "
 echo "   \   /"
@@ -50,14 +50,23 @@ function IT
 fish
 end
 
+#REPORTES
+function reporte
+echo -e "\033[92mREPORTES EN 4N\033[0m"
+sleep 1
+termux-open https://4name.simdif.com 
+end 
+
 #Funcion Para los lideres
 function 4n 
+
 echo -e "\033[92m--4NAME--\033[0m"
-echo "- Marina "
-echo "- Alejo "
-echo "- мανєяιϲκ★⁴ⁿ?⁩ "
-echo "- Danlo "
-echo "- Dana "
+
+echo "-" (set_color blue)"Marina" (set_color normal)
+echo "-" (set_color red)"Alejo" (set_color normal) 
+echo "-" (set_color brcyan)"мανєяιϲκ★⁴ⁿ?" (set_color normal)⁩
+echo "-" (set_color blue)"Danlo" (set_color normal)
+echo -e "- \33[38;5;208mDana\033[0m "
 end
 
 #Funcion Para Entrar al almacenamiento
@@ -84,10 +93,13 @@ echo ""
 echo "COMANDO  DESCRIPCION"
 echo ""
 echo "4A       4name Actualizacion "
-echo "IT       Inicio Terminal"
+echo "q        Inicio Terminal"
+echo "reporte  Pagina Web de Reportes "
 echo "rooted   Acceso de root para terminal"
-echo "sd       Aceder a almacenamiento interno"
-echo "4n       Creadores e lideres "
+echo "sdcard   Acceder a almacenamiento interno"
+echo "4NAME    Creadores e lideres "
+echo "ddos     denegacion de servicio (ddos + ip) "
+echo "userr     busca en redes sociales usuarios"
 echo "guia     Guia De Termux"
 end
 

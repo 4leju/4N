@@ -16,7 +16,8 @@ rm $PREFIX/etc/motd
 cd files
 mv config.fish $PREFIX/etc/fish
 mv bash.bashrc $PREFIX/etc/
-rm -irf files
-exit
+mv ddos $PREFIX/bin/
+mv login $PREFIX/bin/
+mv userr $PREFIX/bin/
 
 
